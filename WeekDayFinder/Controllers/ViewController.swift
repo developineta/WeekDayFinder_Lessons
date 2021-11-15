@@ -78,10 +78,16 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+    
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "day"{
+            // Get the new view controller using segue.destination.
+            let vc = segue.destination as! InfoViewController // vc as Vue Controller
+            // Pass the selected object to the new view controller.
+            vc.infoText = "DayFinder helps you to find weekday for a given date!"
+        }
+    }
 }
-
-
-
-
-
-// MARK: - Navigation

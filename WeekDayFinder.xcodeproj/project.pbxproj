@@ -14,6 +14,7 @@
 		FCC006C1273FB91F00765F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC006C0273FB91F00765F8E /* Assets.xcassets */; };
 		FCC006C4273FB91F00765F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC006C2273FB91F00765F8E /* LaunchScreen.storyboard */; };
 		FCF81BA92742F226002A76E1 /* AppearenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF81BA82742F226002A76E1 /* AppearenceViewController.swift */; };
+		FCF81BAB2742F825002A76E1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF81BAA2742F825002A76E1 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FCC006C3273FB91F00765F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCC006C5273FB91F00765F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCF81BA82742F226002A76E1 /* AppearenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearenceViewController.swift; sourceTree = "<group>"; };
+		FCF81BAA2742F825002A76E1 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				FCC006BB273FB91800765F8E /* ViewController.swift */,
+				FCF81BAA2742F825002A76E1 /* InfoViewController.swift */,
 				FCF81BA82742F226002A76E1 /* AppearenceViewController.swift */,
 			);
 			path = Controllers;
@@ -169,6 +172,7 @@
 				FCC006BC273FB91800765F8E /* ViewController.swift in Sources */,
 				FCC006B8273FB91800765F8E /* AppDelegate.swift in Sources */,
 				FCC006BA273FB91800765F8E /* SceneDelegate.swift in Sources */,
+				FCF81BAB2742F825002A76E1 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
