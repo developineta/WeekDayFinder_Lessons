@@ -127,6 +127,9 @@
                                                             <backgroundConfiguration key="background"/>
                                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="findButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WIP-fT-HYn"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -157,6 +160,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="dayTextField" destination="Xjv-eO-jgD" id="wVG-tp-eKp"/>
+                        <outlet property="findButton" destination="MZG-DU-8x5" id="hqC-X7-5cf"/>
+                        <outlet property="monthTextField" destination="2tE-d2-xMX" id="kWw-Qy-3bM"/>
+                        <outlet property="resultLabel" destination="uW2-Fc-OPr" id="pBx-we-BiX"/>
+                        <outlet property="yearTextField" destination="3BS-kI-Vox" id="bnt-dJ-v50"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
