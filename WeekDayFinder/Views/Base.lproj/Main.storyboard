@@ -275,7 +275,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="scW-li-Tkr">
-                                <rect key="frame" x="47" y="172.5" width="226" height="135"/>
+                                <rect key="frame" x="47" y="135" width="226" height="210"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UL2-kB-d0U">
                                         <rect key="frame" x="0.0" y="0.0" width="226" height="60"/>
@@ -295,8 +295,17 @@
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Your Day in French"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Press if you liked this app"/>
+                                        <connections>
+                                            <action selector="pressForEmoji:" destination="8z4-O2-zHb" eventType="touchUpInside" id="5m9-20-cTk"/>
+                                        </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCz-Sx-h66">
+                                        <rect key="frame" x="0.0" y="150" width="226" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -312,12 +321,13 @@
                     <navigationItem key="navigationItem" id="7eL-ua-bVO"/>
                     <connections>
                         <outlet property="appDescLabel" destination="UL2-kB-d0U" id="rDd-wb-Glv"/>
-                        <outlet property="dayTranslate" destination="le0-I8-zoe" id="dbc-fw-xi1"/>
+                        <outlet property="emojiButton" destination="le0-I8-zoe" id="H6O-pF-3QO"/>
+                        <outlet property="emojiOutput" destination="HCz-Sx-h66" id="tkr-p6-SSC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xzt-tW-Ue6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923.83177570093449" y="780.77753779697628"/>
+            <point key="canvasLocation" x="924.375" y="887.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KwL-SN-ZNY">
@@ -325,7 +335,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dMj-lT-r2K" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="be2-UB-non">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

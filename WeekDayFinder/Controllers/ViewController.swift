@@ -88,6 +88,8 @@ class ViewController: UIViewController {
             let vc = segue.destination as! InfoViewController // vc as Vue Controller
             // Pass the selected object to the new view controller.
             vc.infoText = "DayFinder helps you to find weekday for a given date!"
+            
+            vc.myEmoji = "🤩"
         }
     }
 }
