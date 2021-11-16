@@ -29,8 +29,6 @@ class InfoViewController: UIViewController {
     }
     
     func displayEmoji(){
-        //guard let showSmiley = String?(myEmoji.text!) else {return}
-        
         if !myEmoji.isEmpty{
             emojiOutput.text = myEmoji
         }
