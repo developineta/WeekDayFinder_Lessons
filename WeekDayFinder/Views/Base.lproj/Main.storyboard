@@ -152,16 +152,16 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Day Finder" id="8Ny-iz-CHr">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="info.circle.fill" catalog="system" id="luZ-xz-4RV">
+                        <barButtonItem key="leftBarButtonItem" image="info.circle.fill" catalog="system" id="mYY-Cb-OMJ">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
-                                <segue destination="8z4-O2-zHb" kind="show" identifier="day" id="0Df-ih-6JZ"/>
+                                <segue destination="8z4-O2-zHb" kind="show" identifier="day" id="nB5-Nm-hcQ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="moon.circle.fill" catalog="system" id="dyC-sW-bho">
+                        <barButtonItem key="rightBarButtonItem" image="moon.circle.fill" catalog="system" id="6Oa-ir-kzT">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
-                                <segue destination="ljW-Hh-0rp" kind="presentation" id="nZw-S7-fSk"/>
+                                <segue destination="ljW-Hh-0rp" kind="presentation" id="cH3-52-JE3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -244,19 +244,13 @@
                         <viewLayoutGuide key="safeArea" id="C7A-CW-eXe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="AMB-C9-K6P" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="C7A-CW-eXe" secondAttribute="leading" symbolic="YES" id="3Bj-CU-hLs"/>
                             <constraint firstItem="XMB-7l-cBo" firstAttribute="top" secondItem="C7A-CW-eXe" secondAttribute="top" constant="153" id="3Vf-Ug-RRN"/>
-                            <constraint firstItem="AMB-C9-K6P" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="C7A-CW-eXe" secondAttribute="leading" symbolic="YES" id="Msx-6C-hEt"/>
+                            <constraint firstItem="AMB-C9-K6P" firstAttribute="top" secondItem="C7A-CW-eXe" secondAttribute="top" constant="26" id="7ou-VX-Mol"/>
                             <constraint firstItem="C7A-CW-eXe" firstAttribute="trailing" secondItem="XMB-7l-cBo" secondAttribute="trailing" constant="60" id="Pko-Oo-W8b"/>
+                            <constraint firstItem="AMB-C9-K6P" firstAttribute="trailing" secondItem="Ly2-su-0bh" secondAttribute="trailingMargin" id="RON-dc-CUa"/>
                             <constraint firstItem="XMB-7l-cBo" firstAttribute="leading" secondItem="C7A-CW-eXe" secondAttribute="leading" constant="61" id="a6V-zi-Sd9"/>
-                            <constraint firstItem="XMB-7l-cBo" firstAttribute="top" relation="lessThanOrEqual" secondItem="AMB-C9-K6P" secondAttribute="bottom" constant="300" id="flH-6w-F6p"/>
-                            <constraint firstItem="AMB-C9-K6P" firstAttribute="top" secondItem="C7A-CW-eXe" secondAttribute="top" constant="26" id="i3Y-Z0-qpC"/>
-                            <constraint firstItem="C7A-CW-eXe" firstAttribute="trailing" secondItem="AMB-C9-K6P" secondAttribute="trailing" constant="16" id="qC7-0j-EQY"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="flH-6w-F6p"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="textLabel" destination="Jcb-zB-hNk" id="mlI-4m-F6r"/>
@@ -264,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3P-b2-s1j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718.6915887850466" y="121.16630669546437"/>
+            <point key="canvasLocation" x="1717.5" y="120"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="mz3-20-zm3">
@@ -348,7 +342,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dMj-lT-r2K" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="be2-UB-non">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
