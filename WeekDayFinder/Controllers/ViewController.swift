@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var dayTextField: UITextField!
     @IBOutlet weak var monthTextField: UITextField!
     @IBOutlet weak var yearTextField: UITextField!
@@ -18,15 +18,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func findButtonTapped(_ sender: Any) {
         let calendar = Calendar.current
         var dateComponets = DateComponents()
         
         guard let day = Int(dayTextField.text!), let month = Int(monthTextField.text!), let year = Int(yearTextField.text!) else {
-            //alert
             warningAlert(withTitle: "Input Error!", withMessage: "Date Text Fields can't be empty.")
             return
         }
@@ -64,7 +62,7 @@ class ViewController: UIViewController {
         yearTextField.text = ""
         resultLabel.text = "Press Find To Search for Your Day"
     }
-
+    
     func warningAlert(withTitle title: String?, withMessage message: String?){
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -73,12 +71,11 @@ class ViewController: UIViewController {
         alert.addAction(okButton)
         self.present(alert, animated: true, completion: nil)
     }
-
-
+    
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    
     
     
     // MARK: - Navigation
